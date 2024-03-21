@@ -2,5 +2,5 @@
 ## Scala application from an external lens
 
 Presentation slides:
-- ![lewapek.github.io/scalaAppBeyondTheScope](https://lewapek.github.io/scalaAppBeyondTheScope)
+- [lewapek.github.io/scalaAppBeyondTheScope](https://lewapek.github.io/scalaAppBeyondTheScope)
 
