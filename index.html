@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Looking beyond the scope</title>
+        <link rel="stylesheet" href="dist/reset.css">
+        <link rel="stylesheet" href="dist/reveal.css">
+        
+        <link rel="stylesheet" href="dist/theme/lewapek.css">
+        
+        <link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="plugin/drawer/drawer.css" />
+		<!-- <link rel="stylesheet" href="plugin/chalkboard/style.css"> -->
+		<!-- <link rel="stylesheet" href="plugin/customcontrols/style.css"> -->
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                
+                <section>
+                    <h2>Looking beyond the scope</h2>
+                    <h3>Scala application from an external lens</h3>
+                    </br></br>
+                    <a href="https://linkedin.com/in/lewapek"><div class="author">Paweł Kołodziejczyk</div></a>
+                </section>
+                
+                <section data-markdown="slides.md"
+                    data-separator="\n---\n"
+                    data-separator-vertical="\n--\n"
+                    data-separator-notes="\n-notes-\n">
+                </section>
+                
+                <section>
+                  <h1>Thank you</h1>
+                  <p></br></p>
+                  <div style="text-align: right;"><a href="linkedin.com/in/lewapek">linkedin.com/in/<strong>lewapek</strong></a></div>
+                  <div style="text-align: right;"><a href="github.com/lewapek">github.com/<strong>lewapek</strong></a></div>
+                </section>
+                
+            </div>
+        </div>
+        
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/drawer/drawer.js"></script>
+		<!-- <script src="plugin/chalkboard/plugin.js"></script>
+		<script src="plugin/customcontrols/plugin.js"></script> -->
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+            	hash: true,
+				controls: true,
+				controlsTutorial: false,
+				controlsLayout: 'bottom-right', //  "edges" or "bottom-right"
+				controlsBackArrows: "faded", // "faded", "hidden" or "visible"
+            	center: true,
+            	slideNumber: false,
+				progress: true,
+				pdfSeparateFragments: false,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				drawer: {
+                    toggleDrawKey: "d", // (optional) key to enable drawing, default "d"
+                    toggleBoardKey: "t", // (optional) key to show drawing board, default "t"
+                    colors: ["#fa1e0e", "orange", "yellow", "#8ac926", "#1982c4", "darkblue", "purple", "#000000", "#ffffff"], // (optional) list of colors avaiable (hex color codes)
+                    color: "#FF0000", // (optional) color of a cursor, first color from `codes` is a default
+                    pathSize: 3, // (optional) path size in px, default 4
+                },
+				// chalkboard: {
+				// 	colorButtons: 5,
+                //     boardmarkerWidth: 3,
+                //     chalkWidth: 7,
+                //     chalkEffect: 1.0,
+                //     storage: null,
+                //     // src: null,
+                //     // readOnly: undefined,
+                //     transition: 800,
+                //     theme: "chalkboard",
+                //     background: [ 'rgba(127,127,127,.1)' , path + 'img/blackboard.png' ],
+                //     grid: { color: 'rgb(50,50,10,0.5)', distance: 80, width: 2},
+                //     eraser: { src: path + 'img/sponge.png', radius: 20},
+                //     boardmarkers : [
+                //             { color: 'rgba(100,100,100,1)', cursor: 'url(' + path + 'img/boardmarker-black.png), auto'},
+                //             { color: 'rgba(30,144,255, 1)', cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'},
+                //             { color: 'rgba(220,20,60,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
+                //             { color: 'rgba(50,205,50,1)', cursor: 'url(' + path + 'img/boardmarker-green.png), auto'},
+                //             { color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
+                //             { color: 'rgba(150,0,20150,1)', cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'},
+                //             { color: 'rgba(255,220,0,1)', cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'}
+                //     ],
+                //     chalks: [
+                //             { color: 'rgba(255,255,255,0.5)', cursor: 'url(' + path + 'img/chalk-white.png), auto'},
+                //             { color: 'rgba(96, 154, 244, 0.5)', cursor: 'url(' + path + 'img/chalk-blue.png), auto'},
+                //             { color: 'rgba(237, 20, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-red.png), auto'},
+                //             { color: 'rgba(20, 237, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-green.png), auto'},
+                //             { color: 'rgba(220, 133, 41, 0.5)', cursor: 'url(' + path + 'img/chalk-orange.png), auto'},
+                //             { color: 'rgba(220,0,220,0.5)', cursor: 'url(' + path + 'img/chalk-purple.png), auto'},
+                //             { color: 'rgba(255,220,0,0.5)', cursor: 'url(' + path + 'img/chalk-yellow.png), auto'}
+                //     ]
+                // },
+                // customcontrols: {
+  		        //     controls: [
+  		        //         {
+				// 		    icon:'<i class="fa fa-pen-square"></i>',
+  		        //             title: 'Toggle chalkboard (B)',
+  		        //             action: 'RevealChalkboard.toggleChalkboard();'
+  		        //         },
+  		        //         {
+				// 		    icon: '<i class="fa fa-pen"></i>',
+  		        //             title: 'Toggle notes canvas (C)',
+  		        //             action: 'RevealChalkboard.toggleNotesCanvas();'
+  		        //       	}
+  		        //     ]
+    			// },
+
+            	// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealDrawer ]
+            });
+        </script>
+        
+    </body>
+</html>
