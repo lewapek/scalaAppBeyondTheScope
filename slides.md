@@ -407,7 +407,7 @@ ZIO.logAnnotate(
 
 ## Metrics
 
-![Grafana example](/assets/grafana-screenshot.png "Grafana example")
+![Grafana example](./assets/grafana-screenshot.png "Grafana example")
 
 --
 
@@ -448,7 +448,7 @@ ZIO.logAnnotate(
 
 ## Tracing
 
-![Jaeger example](/assets/jaeger-example.png "Jaeger example")
+![Jaeger example](./assets/jaeger-example.png "Jaeger example")
 
 ---
 
