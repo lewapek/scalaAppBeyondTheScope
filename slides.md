@@ -474,7 +474,7 @@ ZIO.logAnnotate(
 - it's backend responsibility to support the standard
 - backends are easier to replace
   - jaeger ...
-- app needs to send trances to collector
+- app needs to send traces to collector
   - libraries for popular laguages
   - automatic instrumentation available for some of them
 
